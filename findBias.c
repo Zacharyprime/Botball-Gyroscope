@@ -9,7 +9,7 @@ int main()
     //Find the average noise
     int i = 0;
     double avg = 0;
-    while(i<60){
+    while(i<50){
      	avg += gyro_z();
         msleep(1);
         i++;
