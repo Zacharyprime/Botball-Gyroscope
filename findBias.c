@@ -2,7 +2,7 @@
 
 int main()
 {
-    //Stop the mtoors (make bot stand still)
+    //Stop the motors (make bot stand still)
     ao();
     msleep(300);
     
