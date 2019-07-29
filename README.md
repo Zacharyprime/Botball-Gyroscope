@@ -1,7 +1,9 @@
 # Botball-Gyroscope
 **The KIPR Gyroscope Library**
+
 *by: Zachary Sasser*
-This library utilizes the Wallaby (and later Wombat) Gyroscope to make accurate turns, drive straight, and apply other useful functions of the gyroscope.
+
+This library utilizes the Wallaby (and later Wombat) Gyroscope to make accurate turns, drive straight, and apply other useful functions of the gyroscope. There is also example code in the "examples" folder for students and teachers to learn how the gyroscope works, teach it to students, and create new code off of it. 
 
 **Function List:**
 
