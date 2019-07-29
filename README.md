@@ -16,3 +16,7 @@ This library utilizes the Wallaby (and later Wombat) Gyroscope to make accurate 
 *arc(leftWheelSpeed, rightWheelSpeed, angle)* - Arcs the robot by setting the wheels at the specified speed until the controller has rotated the angle specified. This can also be used as a more versitile turn function.
 
 *drive(speed, time)* - Drives in a straight line using the gyroscope and tries to keep the wheels up to the speed specified for the amount of time specified.
+
+**Issues/Bugs:**
+
+-The Wallaby must have the screen facing up for this library to work (Z-axis readings only). This will be fixed soon.
