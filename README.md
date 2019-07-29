@@ -1,2 +1,16 @@
 # Botball-Gyroscope
-This is a repository of programs for the gyroscope to make it easier for students to copy and paste the code they need.
+**The KIPR Gyroscope Library**
+*by: Zachary Sasser*
+This library utilizes the Wallaby (and later Wombat) Gyroscope to make accurate turns, drive straight, and apply other useful functions of the gyroscope.
+
+**Function List:**
+
+*findBias()* - Finds the bias value for the gyroscope, run before the rest of your program.
+
+*readGyro()* - Gets a filtered reading of the gyroscope output (Z axis)
+
+*turn(angle, speed)* - Turns a desired angle at a desired speed using the gyroscope.
+
+*arc(leftWheelSpeed, rightWheelSpeed, angle)* - Arcs the robot by setting the wheels at the specified speed until the controller has rotated the angle specified. This can also be used as a more versitile turn function.
+
+*drive(speed, time)* - Drives in a straight line using the gyroscope and tries to keep the wheels up to the speed specified for the amount of time specified.
