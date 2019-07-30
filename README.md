@@ -5,6 +5,9 @@
 
 This library utilizes the Wallaby (and later Wombat) Gyroscope to make accurate turns, drive straight, and apply other useful functions of the gyroscope. There is also example code in the "examples" folder for students and teachers to learn how the gyroscope works, teach it to students, and create new code off of it. 
 
+**Link to Presentation:**
+https://docs.google.com/presentation/d/1ClOTfmCep9FR-3RnECOgyUgoa9bkWh01geF6Dl38U3A/edit?usp=sharing
+
 **Function List:**
 
 *findBias()* - Finds the bias value for the gyroscope, run before the rest of your program.
