@@ -24,7 +24,7 @@ int findBias(){
 		msleep(1);
 		i++;
 	}
-	bias = avg / 50.0
+	bias = avg / 50.0;
 	return bias;
 }
 
