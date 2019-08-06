@@ -1,7 +1,6 @@
 /*
 The KIPR Gyroscope Library
 by: Zachary Sasser
-
 This library utilizes the Wallaby (and later Wombat) Gyroscope to 
 make accurate turns, drive straight, and apply other useful functions of the gyroscope.
 */
@@ -10,6 +9,8 @@ make accurate turns, drive straight, and apply other useful functions of the gyr
 #include <kipr/botball.h>
 double bias; //Make bias a global variable so that all functions can see it
 double conversion = 1024/250;
+int timeInterval = 10;
+double oldGyro;
 
 int findBias(){
 	//Stop the motors to make bot stand still
@@ -35,8 +36,7 @@ int readGyro(){
 void turn(int angle, int speed){
 	int targetAngle = angle*conversion; //Conversion is 1024/250 to convert KIPR Units to degrees
 	int currentAngle = 0; 
-	int timeInterval = 10;
-	
+
 	double newGyro = readGyro();
 	while(abs(currentAngle) < targetAngle){
 		oldGyro = newGyro;
@@ -77,6 +77,7 @@ int rightSpeed, leftSpeed; //Initialize Variables
 double fixedAngle;
 void drive(int speed, int time){
 	int currentTime = 0;
+
 	double currentAngle = 0;
 	double newGyro = readGyro();
 	
